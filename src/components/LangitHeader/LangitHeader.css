@@ -1,0 +1,14 @@
+.nw-sky { position: relative; height: 190px; overflow: hidden; background: linear-gradient(var(--sky1), var(--sky2)); transition: background .6s; }
+.nw-star { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #fff; opacity: var(--star); transition: opacity .6s; }
+.nw-orb { position: absolute; bottom: -10px; left: 50%; width: 74px; height: 74px; border: 0; padding: 0; border-radius: 50%;
+  cursor: pointer; background: #ffb627; box-shadow: 0 0 50px 14px rgba(255,182,39,.55);
+  transform: translate(-50%,-90px) translateX(-120px); transition: all .8s cubic-bezier(.5,.1,.2,1); }
+.dark .nw-orb { background: #eae6ff; box-shadow: 0 0 40px 10px rgba(200,200,255,.35); transform: translate(-50%,-90px) translateX(120px); }
+.nw-orb::after { content: ""; position: absolute; top: 12px; left: 30px; width: 60px; height: 60px; border-radius: 50%;
+  background: var(--sky1); transform: scale(0); transition: transform .5s .2s; }
+.dark .nw-orb::after { transform: scale(1); }
+.nw-orb:focus-visible { outline: 3px solid var(--accent); outline-offset: 6px; }
+.nw-hills { position: absolute; left: 0; right: 0; bottom: 0; height: 60px; background: var(--bg); transition: background .6s;
+  clip-path: polygon(0 60%,15% 30%,32% 55%,50% 20%,70% 50%,85% 28%,100% 55%,100% 100%,0 100%); }
+.nw-title { position: absolute; top: 18px; left: 0; right: 0; text-align: center; font: 800 1.9rem 'Bricolage Grotesque', sans-serif; color: var(--ink); }
+.nw-title small { display: block; font: 600 .9rem 'Nunito'; opacity: .8; margin-top: 2px; }

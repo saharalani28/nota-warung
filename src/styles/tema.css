@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Courier+Prime:wght@400;700&family=Nunito:wght@400;600;700&display=swap');
+
+/* Mode terang (pagi) */
+.nw {
+  --sky1: #9fd6ee; --sky2: #fdebc4; --bg: #fdebc4; --panel: #fffdf8;
+  --ink: #2c2118; --muted: #7a6a5a; --line: #e6d6bd; --accent: #8a4b24;
+  --accent-ink: #fff; --paper: #fffef9; --stamp: #d1352b; --star: 0;
+  min-height: 100vh; background: var(--bg); color: var(--ink);
+  font-family: 'Nunito', system-ui, sans-serif; transition: background .6s, color .6s;
+}
+
+/* Mode gelap (malam) */
+.nw.dark {
+  --sky1: #141233; --sky2: #2d2a57; --bg: #1a1838; --panel: #25224a;
+  --ink: #ece8ff; --muted: #a39fc9; --line: #3a3669; --accent: #f2a65a;
+  --accent-ink: #2a1700; --paper: #2f2b57; --stamp: #ff7a6b; --star: 1;
+}
+
+.nw-main {
+  max-width: 960px; margin: 0 auto; padding: 24px 16px 48px;
+  display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items: start;
+}
+@media (max-width: 760px) { .nw-main { grid-template-columns: 1fr; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .nw, .nw * { transition: none !important; animation: none !important; }
+}

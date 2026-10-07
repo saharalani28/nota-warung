@@ -1,0 +1,20 @@
+.nw-form { background: var(--panel); border: 1.5px solid var(--line); border-radius: 20px; padding: 24px; transition: background .6s, border-color .6s; }
+.nw-form h2 { margin: 0 0 16px; font: 800 1.3rem 'Bricolage Grotesque'; }
+.nw-lab { display: block; font-weight: 700; font-size: .9rem; margin: 16px 0 8px; }
+.nw-in, .nw-ta { width: 100%; box-sizing: border-box; padding: 11px 13px; border-radius: 12px; border: 1.5px solid var(--line);
+  background: transparent; color: var(--ink); font: inherit; }
+.nw-in:focus, .nw-ta:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 30%, transparent); }
+
+.nw-gula { display: flex; gap: 8px; flex-wrap: wrap; }
+.nw-gula label { cursor: pointer; }
+.nw-gula input { position: absolute; opacity: 0; }
+.nw-gula span { display: inline-block; padding: 8px 14px; border-radius: 999px; border: 1.5px solid var(--line); font-size: .9rem; transition: all .2s; }
+.nw-gula input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 700; }
+.nw-gula input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.nw-err { color: #c2410c; font-size: .88rem; min-height: 1.2em; margin: 12px 0 0; }
+.dark .nw-err { color: #ffb199; }
+.nw-btn { width: 100%; margin-top: 8px; padding: 14px; border: 0; border-radius: 12px; cursor: pointer; background: var(--accent);
+  color: var(--accent-ink); font: 800 1.05rem 'Bricolage Grotesque'; transition: transform .15s, filter .2s; }
+.nw-btn:hover { transform: translateY(-2px); filter: brightness(1.07); }
+.nw-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }

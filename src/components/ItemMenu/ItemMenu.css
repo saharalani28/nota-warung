@@ -1,0 +1,9 @@
+.nw-item { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px dashed var(--line); }
+.nw-item b { display: block; font-weight: 700; }
+.nw-item span { color: var(--muted); font-size: .88rem; }
+.nw-step { display: flex; align-items: center; gap: 10px; }
+.nw-step button { width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--accent); background: transparent;
+  color: var(--accent); font: 800 1.1rem 'Nunito'; cursor: pointer; transition: transform .12s, background .2s; }
+.nw-step button:hover { background: var(--accent); color: var(--accent-ink); }
+.nw-step button:active { transform: scale(.88); }
+.nw-step output { min-width: 18px; text-align: center; font-weight: 800; }
